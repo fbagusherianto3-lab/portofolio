@@ -1,15 +1,40 @@
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const menu = document.querySelector('.menu');
-        const menuLinks = document.querySelectorAll('.menu a');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menu = document.querySelector('.menu');
+const menuLinks = document.querySelectorAll('.menu a');
 
-        hamburgerMenu.addEventListener('click', () => {
-            menu.classList.toggle('tampil');
-            hamburgerMenu.classList.toggle('active');
-        });
+if (hamburgerMenu && menu) {
+    const closeMenu = () => {
+        menu.classList.remove('tampil');
+        hamburgerMenu.classList.remove('active');
+        hamburgerMenu.setAttribute('aria-expanded', 'false');
+        hamburgerMenu.setAttribute('aria-label', 'Buka menu');
+    };
 
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('tampil');
-                hamburgerMenu.classList.remove('active');
-            });
-        });
+    hamburgerMenu.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('tampil');
+        hamburgerMenu.classList.toggle('active', isOpen);
+        hamburgerMenu.setAttribute('aria-expanded', String(isOpen));
+        hamburgerMenu.setAttribute('aria-label', isOpen ? 'Tutup menu' : 'Buka menu');
+    });
+
+    menuLinks.forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            closeMenu();
+            hamburgerMenu.focus();
+        }
+    });
+}
+
+document.querySelectorAll('.social-link').forEach((link) => {
+    link.addEventListener('click', (event) => event.preventDefault());
+});

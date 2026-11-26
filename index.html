@@ -4,26 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <meta name="description" content="Portofolio dirumahbagus.id dan kursus pemrograman gratis serta premium.">
+    <title>Portofolio - dirumahbagus.id</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <nav>
+    <nav aria-label="Navigasi utama">
         <!-- menu -->
         <div class="wrapper">
             <div class="logo">
                 <img src="images/logo.png" alt="Logo">
             </div>
-            <div class="menu">
+            <div class="menu" id="main-menu">
                 <ul>
                     <li><a href="#premium-course">Premium Course</a></li>
                     <li><a href="#tentang-saya">Tentang Saya</a></li>
                     <li><a href="#free-course">Free Course</a></li>
                 </ul>
             </div>
-            <button class="hamburger-menu" aria-label="Toggle menu">
+            <button class="hamburger-menu" type="button" aria-label="Buka menu" aria-controls="main-menu"
+                aria-expanded="false">
                 <svg class="icon-bars" width="28" height="22" viewBox="0 0 28 22" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <line x1="2" y1="3" x2="26" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -43,7 +45,7 @@
             <h4>dirumahbagus.id</h4>
             <h5>Belajar Pemrograman<br>untuk siapa aja</h5>
             <p>mulai kuasai coding. cukup dari #rumahaja</p>
-            <a href="#statistic" class="button button-xl">
+            <a href="#premium-course" class="button button-xl">
                 mulai belajar sekarang
             </a>
         </div>
@@ -80,7 +82,11 @@
                         <p>Tutorial TailwindCSS: Dari Pemula sampai Membuat Design Web</p>
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 5 jam</small>
-                            <a href="" class="button"><i class="fa-solid fa-cart-shopping"></i> ikuti</a>
+                            <a href="https://www.udemy.com/course/tutorial-tailwindcss-dari-pemula-sampai-membuat-design-web/?couponCode=CP261123G2" target="_blank"
+                                rel="noopener noreferrer" class="button course-link"
+                                aria-label="Ikuti kursus TailwindCSS">
+                                <i class="fa-solid fa-cart-shopping"></i> ikuti
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +97,8 @@
                         <p>Tutorial Laravel: Dari Pemula Sampai Bisa Membuat Aplikasi</p>
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 16 jam</small>
-                            <a href="" class="button"><i class="fa-solid fa-cart-shopping"></i> ikuti</a>
+                            <a href="https://www.udemy.com/course/tutorial-laravel-dari-pemula-sampai-bisa-membuat-aplikasi/?couponCode=CP261123G2" class="button course-link" aria-label="Ikuti kursus Laravel"><i
+                                    class="fa-solid fa-cart-shopping"></i> ikuti</a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +109,8 @@
                         <p>Membuat Website Dengan Menggunakan Bootstrap 5 &amp; jQuery</p>
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 3 jam</small>
-                            <a href="" class="button"><i class="fa-solid fa-cart-shopping"></i> ikuti</a>
+                            <a href="https://www.udemy.com/course/membuat-website-dengan-menggunakan-bootstrap-5-jquery/?couponCode=CP261123G2" class="button course-link" aria-label="Ikuti kursus Bootstrap 5 dan jQuery"><i
+                                    class="fa-solid fa-cart-shopping"></i> ikuti</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +130,11 @@
                         <img src="images/course/free-1.jpg" alt="HTML & CSS">
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 1 jam</small>
-                            <a href="" class="button">ikuti</a>
+                            <a href="https://youtu.be/5JwWqjd4e9o?si=vceKW85Yz0p3i9OX" target="_blank"
+                                rel="noopener noreferrer" class="button course-link"
+                                aria-label="Ikuti kursus HTML dan CSS">
+                                ikuti
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -132,7 +144,11 @@
                         <img src="images/course/free-2.jpg" alt="CRUD PHP MySQL">
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 1 jam</small>
-                            <a href="" class="button">ikuti</a>
+                            <a href="https://youtu.be/ZgNH0UfakeM?si=3rOkGeJtcnJDpu_C" target="_blank"
+                                rel="noopener noreferrer" class="button course-link"
+                                aria-label="Ikuti kursus HTML dan CSS">
+                                ikuti
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +158,7 @@
                         <img src="images/course/free-3.jpg" alt="Bootstrap 5">
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 1 jam</small>
-                            <a href="" class="button">ikuti</a>
+                            <a href="https://youtu.be/93lDKPSE3us?si=GY0WyCns3zUWcvaE" class="button course-link" aria-label="Ikuti kursus Bootstrap 5">ikuti</a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +168,7 @@
                         <img src="images/course/free-4.jpg" alt="PHP & MySQL Website">
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 5 jam++</small>
-                            <a href="" class="button">ikuti</a>
+                            <a href="https://youtu.be/ck0gV507ZSk?si=-lcmbuIzJNXgvr_Y" class="button course-link" aria-label="Ikuti kursus PHP dan MySQL">ikuti</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +178,8 @@
                         <img src="images/course/free-5.jpg" alt="Laravel 9 Portofolio">
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 5 jam++</small>
-                            <a href="" class="button">ikuti</a>
+                            <a href="https://youtu.be/tqyGXGiJ_0k?si=7r-Ggnn7onh-0fmP" class="button course-link"
+                                aria-label="Ikuti kursus Laravel 9 Portofolio">ikuti</a>
                         </div>
                     </div>
                 </div>
@@ -172,7 +189,8 @@
                         <img src="images/course/free-6.jpg" alt="Website Toko Online">
                         <div>
                             <small><i class="fa-solid fa-clock"></i> 1 jam</small>
-                            <a href="" class="button">ikuti</a>
+                            <a href="https://youtu.be/kK23OXSJYQw?si=X5PLUBopVCM5PXBD" class="button course-link"
+                                aria-label="Ikuti kursus Website Toko Online">ikuti</a>
                         </div>
                     </div>
                 </div>
@@ -191,10 +209,11 @@
                     <p>Mulai membuat channel YouTube tentang pemrograman di tahun 2020.</p>
                     <p>Supaya bisa terus belajar dan terus berbagi</p>
                     <div class="social">
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
