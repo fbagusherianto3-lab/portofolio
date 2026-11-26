@@ -28,13 +28,9 @@ if (hamburgerMenu && menu) {
     });
 
     document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') {
+        if (event.key === 'Escape' && menu.classList.contains('tampil')) {
             closeMenu();
             hamburgerMenu.focus();
         }
     });
 }
-
-document.querySelectorAll('.social-link').forEach((link) => {
-    link.addEventListener('click', (event) => event.preventDefault());
-});
